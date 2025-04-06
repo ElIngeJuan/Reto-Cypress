@@ -3,9 +3,9 @@ describe('GitHub Login Test', () => {
         cy.visit('https://github.com/login')
     })
 
-    it('Logs into GitHub', () => {
-        cy.get('input[name="login"]').type('lgin')
-        cy.get('input[name="password"]').type('contraseña')
+    it('Iniciar sesión en github', () => {
+        cy.get('input[name="login"]').type('Usuario')
+        cy.get('input[name="password"]').type('Contraseña')
         cy.get('input[name="commit"]').click()
     })
 })

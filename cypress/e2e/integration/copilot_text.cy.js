@@ -1,8 +1,8 @@
 describe('Copilot Ask Test', () => {
     before(() => {
         cy.visit('https://github.com/login')
-        cy.get('input[name="login"]').type('lgin')
-        cy.get('input[name="password"]').type('contraseña')
+        cy.get('input[name="login"]').type('Usuario')
+        cy.get('input[name="password"]').type('Contraseña')
         cy.get('input[name="commit"]').click()
       })
     it('Pregunta algo a Copilot', () => {
